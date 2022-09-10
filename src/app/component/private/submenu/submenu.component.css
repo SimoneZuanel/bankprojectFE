@@ -1,0 +1,59 @@
+.active-sublevel {
+  color: white !important;
+}
+
+.menu-collapse-icon {
+  font-size: 25px;
+  width: 2rem;
+  min-width: 2rem;
+  margin: auto 0.5rem auto auto;
+  text-align: cente;
+  color: white;
+}
+
+.sublevel-nav {
+  list-style: none;
+  margin-left: 1pc;
+  margin-bottom: 0.5pc;
+  margin-top: 0.5pc;
+}
+
+.sublevel-nav-item > .sublevel-nav-link {
+  align-items: center;
+  text-align: center;
+  height: 3rem;
+  color: rgb(238, 235, 235,0.5);
+  text-decoration: none;
+  border-radius: 0.6rem;
+  margin-top: 0.7pc;
+}
+.sublevel-nav-item > .sublevel-nav-link:hover ,
+.sublevel-nav-item > .bi-chevron-right:hover{
+  color: black;
+  transition: all 0.8s ease;
+}
+
+.sublevel-nav-link > .bi-circle{
+  font-size: 4px;
+  width: 2rem;
+  min-width: 2rem;
+  margin-left: 1pc;
+}
+
+.sublevel-link-text {
+  margin-left: 1.5rem;
+}
+
+
+.bi-chevron-right,
+.bi-chevron-down {
+  font-size: 1rem;
+  margin-left: 0.5pc;
+}
+
+.bi-chevron-right:hover,
+.bi-chevron-down:hover {
+  color: black;
+}
+
+

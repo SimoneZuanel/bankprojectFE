@@ -1,0 +1,96 @@
+[role="form"] {
+    width: 50rem;
+    height: 78rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    border: 1px solid rgb(186, 186, 186) ;
+    background-color: white;
+}
+
+.p{
+    margin-bottom: 1.5pc;
+}
+
+
+
+.title{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.title .marchio{
+    font-size: 1rem;
+}
+
+.registrati{
+    text-align: center;
+    margin-top: 1.5pc;
+    margin-bottom: 1pc;
+    font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input.ng-invalid {
+    background-color: rgba(227, 7, 7, 0.1);
+    border: 1px solid red;
+}
+
+
+.help-block{
+    font-size: 13px;
+    color: red;
+}
+
+.control-label{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 10rem;
+}
+
+.form-group{
+    width: 35rem;
+    margin-left: 5pc;
+}
+
+.form-group3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-group3 button {
+    margin-top: 0.8pc;
+    margin-bottom: 0.8pc;
+    width: 13.2rem;
+    height: 4rem;
+    background-color: rgb(213, 213, 213);
+    border: 1px solid black;
+}.form-group3 button:hover{
+    background-color: black;
+    color: white;
+}
+
+.link{
+    margin-top: 1pc;
+}
+
+.link a{
+    color: gray;
+}.link a:hover{
+    color: red;
+}
+
+p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.back{
+    background-color: rgba(234, 234, 234, 0.5); 
+    padding-top: 3pc;
+    padding-bottom: 3pc;
+}

@@ -1,0 +1,101 @@
+
+<div class="container">
+    <form role="form">
+        <h1 class="titolo">Bonifico bancario</h1>
+
+        <div class="form-group">
+            <label>Beneficiario</label>
+            <input type="text"
+            placeholder="Inserisci il destinatario del bonifico"
+            id="nominativo"
+            class="form-control"
+            name="nominativo"
+            required
+            />
+        </div>
+
+        <div class="form-group1">
+            <div class="col-sm-9">
+            <label>Iban</label>
+            <input type="text"
+            placeholder="Inserisci Iban"
+            id="iban"
+            class="form-control"
+            name="iban"
+            required
+            />
+        </div>
+
+        <div class="col-sm-4">
+            <label>Importo</label>
+            <input type="number"
+            placeholder="0,00"
+            id="importo"
+            class="form-control"
+            name="importo"
+            required
+            />
+        </div>
+
+        <div class="col-sm-4">
+            <label>Data pagamento</label>
+            <input type="date"
+            id="Data"
+            class="form-control"
+            name="Data"
+            required
+            />
+        </div>
+    </div>
+
+        <div class="form-group">
+            <label>Causale</label>
+            <input type="text"
+            placeholder="Inserisci la causale"
+            id="causale"
+            class="form-control"
+            name="causale"
+            required
+            />
+        </div>
+
+        <hr>
+
+        <div class="form-group-2">
+            <div class="col-sm-4">
+                <label>Dal conto</label>
+                <div class="select">
+                <select name="conto">
+                    
+                    <option value="conto1">1</option>
+                    <option value="conto1">2</option>
+               
+                </select>
+            </div>
+            </div>
+
+            <div class="col-sm-4" >
+                <label>Saldo disponibile</label>
+                <div class="select" *ngFor="let conto of conti">
+                    <h4>conto numero: {{conto.id}}</h4>
+                    <h4>{{conto.saldo}}€</h4>
+            </div>
+            </div>
+
+            <div class="col-sm-4">
+                <label>Ordinante</label>
+                <div class="select">
+                    <h4>Nazzareno</h4>
+            </div>
+            </div>   
+        </div>
+
+        <div class="bottone">
+            <button class="btn btn-primary" type="submit" >CONTINUA</button>
+        </div>
+
+
+
+
+    </form>
+</div>

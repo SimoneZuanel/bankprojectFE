@@ -1,0 +1,57 @@
+<div class="container">
+    <form role="form">
+        <h1 class="titolo">Ricarica carta di credito</h1>
+        <div class="form-group">
+            <label>Destinatario*</label>
+            <input type="text"
+            placeholder="Inserire nome e cognome del destinatario"
+            id="intestatario"
+            class="form-control"
+            name="intestatario"
+            required
+            />
+        </div>
+
+        <div class="form-group1">
+            <div class="col-sm-6">
+                <p>Selezionare la carta*: </p>
+                <input type="radio" id="first" name="card" value="1">
+                <label for="first">Numero carta 1</label>
+                <br>
+                <input type="radio" id="second" name="card" value="2">
+                <label for="second">Numero carta 2</label>
+                <br>
+                <input type="radio" id="third" name="card" value="3">
+                <label for="third">Numero carta 3</label>
+            </div>
+        </div>
+
+        <div class="form-group1">
+            <div class="col-sm-12">
+            <label>Importo*</label>
+            <input type="number"
+            placeholder="Inserire la quantità di denaro"
+            id="importo"
+            class="form-control"
+            name="importo"
+            required
+            />
+            </div>
+        </div>
+
+        <div class="form-group2">
+        <label>Data di pagamento*</label>
+        <input type="date"
+        id="Data"
+        class="form-control"
+        name="Data"
+        required
+        />
+        </div>
+        
+        <div class="button">
+            <small class="help-block">* Campi obbligatori</small>
+            <button class="btn btn-primary" type="submit">Conferma</button>
+        </div>
+    </form>
+</div>

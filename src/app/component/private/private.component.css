@@ -1,0 +1,221 @@
+.sidenav {
+  background-color: rgb(160, 160, 160);
+  transition: all 0.3s ease;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 6.2rem;
+  height: 100vh;
+  box-sizing: 0.063rem 0rem 1.25rem 0rem rgba(113, 113, 113);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 0.938rem 0.938rem 0 0.938rem;
+  width: 100%;
+}
+
+.logo-container > .logo {
+  background-color: white;
+  text-align: center;
+  width: 4rem;
+  min-width: 4rem;
+  border-radius: 0.313rem;
+  padding: 0.313rem;
+  font-size: 24px;
+  font-weight: 900;
+  cursor: pointer;
+  border: none;
+}
+
+.logo-container > .logo-text {
+  margin-left: 4rem;
+  font-size: 24px;
+  font-size: 700;
+  color: white;
+}
+
+.logo-container > .btn-close {
+  font-size: 1.8rem;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.bi-x {
+  color: white;
+}
+
+.scrollwrap_delayed{
+  margin-top: 1.5pc;
+}
+
+.sidenav-collapsed {
+  width: 25rem;
+}
+
+.sidenav-nav {
+  list-style: none;
+  padding: 0.938rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100% - 3.65rem);
+  cursor: pointer;
+}
+
+.sidenav-nav > .sidenav-nav-item {
+  width: 100%;
+  margin-top: 1pc;
+  margin-bottom: 0.6rem;
+}
+
+.sidenav-nav-item > .sidenav-nav-link {
+  color: white;
+  display: flex;
+  height: 4rem;
+  padding-top: 0.4pc;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.7s ease;
+}
+
+
+.sidenav-nav-link > .sidenav-link-icon {
+  font-size: 20px;
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.sidenav-nav-link > .sidenav-link-text {
+  font-size: 1.5rem;
+  margin-top: 0.4rem;
+  margin-left: 2rem;
+}
+
+
+.sidenav-nav > .sidenav-nav-item > .sidenav-nav-link:hover ,
+.sidenav-nav-link > .menu-collapse-icon:hover {
+  color: black;
+  background-color: white;
+}
+
+
+.active {
+  background-color: white;
+}
+
+.active > .menu-collapse-icon,
+.active > .sidenav-link-icon ,
+.active > .sidenav-link-text {
+ color: black;
+}
+
+.active > .sidenav-nav-link:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.active-sublevel {
+  color: white !important;
+}
+
+.menu-collapse-icon  {
+  font-size: 25px;
+  width: 2rem;
+  min-width: 2rem;
+  margin: auto 0.5rem auto auto;
+  text-align: cente;
+  color: white;
+}
+
+
+.sublevel-nav {
+  list-style: none;
+}
+
+.sublevel-nav-item > .sublevel-nav-link {
+  align-items: center;
+  text-align: center;
+  height: 3rem;
+  color: rgb(238, 235, 235,0.5);
+  text-decoration: none;
+  border-radius: 0.6rem;
+  margin-top: 0.7pc;
+}
+.sublevel-nav-item > .sublevel-nav-link:hover ,
+.sublevel-nav-item > .bi-chevron-right:hover{
+  color: black;
+  transition: all 0.8s ease;
+}
+
+.sublevel-nav-link > .bi-circle{
+  font-size: 4px;
+  width: 2rem;
+  min-width: 2rem;
+}
+
+.sublevel-link-text {
+  margin-left: 1.5rem;
+}
+
+
+.bi-chevron-right,
+.bi-chevron-down {
+  font-size: 1.5rem;
+  margin-right: 3pc;
+}
+
+.bi-chevron-right:hover,
+.bi-chevron-down:hover {
+  color: black;
+}
+
+
+.logout {
+  display: flex;
+  align-items: center;
+  padding: 0.938rem 0.938rem 1.2rem 0.938rem;
+  width: 100%;
+  margin-top: 12pc;
+}
+
+
+.logout > .logout-nav-link {
+  display: flex;
+  width: 25rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 0.9rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  transition: all 0.4s ease;
+  color: white;
+}
+
+.logout > .logout-nav-link:hover {
+  color: red;
+  background-color: rgb(255, 255, 255,0.8);
+  box-shadow: 2px 2px 1px rgba(32, 32, 32, 0.3);
+}
+
+.logout > .logout-nav-link > i {
+  font-size: 2rem;
+  margin-left: 0.2rem;
+}
+
+.logout > .logout-nav-link > .logout-link-text {
+  margin-top: 0.2pc;
+  margin-left: 3.5pc;
+}

@@ -1,0 +1,130 @@
+<nav class="nav-bar">
+    <div class="logo">
+        <img src="favicon.ico" alt="">
+        <p>ubank</p>
+    </div>
+
+    <div class="nav-items">
+        <a routerLink="/home">
+            <i class="bi bi-house-fill"></i>
+             Home 
+        </a>
+
+        <a routerLink="/chi-siamo"> 
+            <i class="bi bi-phone-fill"></i>
+            Chi siamo
+        </a>
+
+        <a *ngIf="isAuthenticated" routerLink="/private">
+            <i class="bi bi-person-fill"></i>
+            Area Personale
+        </a>
+    </div>
+    <a *ngIf="!isAuthenticated" routerLink="/auth">  Accedi </a>
+    <a *ngIf="isAuthenticated" routerLink="/" (click)="logout()">
+        Esci
+    </a>
+</nav>   
+
+<div class="cont-img">
+    <h1>Servizio Clienti Aubank</h1>
+</div>
+
+
+<div class="container">
+    <ul>
+        <li>
+            <h1> Sei cliente?</h1>
+        </li>
+
+        <li>
+            <p>contatta il numero verde</p>
+            <p>800.205.105</p>
+        </li>
+
+        <li>
+            <p>servizio clienti dell estero</p>
+            <p>+39.02.9154.6025</p>
+        </li>
+
+        <li>
+            <p>Email</p>
+            <p>info@aubank.it</p>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <h1> Non sei cliente?</h1>
+        </li>
+
+        <li>
+            <p>contatta il numero deidicato</p>
+            <p>800.50.10.80</p>
+        </li>
+
+        <li>
+            <p>fax dedicato ai clienti</p>
+            <p>02.9246.6440</p>
+        </li>
+
+        <li>
+            <p>Posta elettronica certificata</p>
+            <p>bancaaubank@pec.aubank.it</p>
+        </li>
+    </ul>
+</div>
+
+<div class="container2">
+    <div class="title">
+        <h1> Contatta gli investitori </h1>
+    </div>
+
+    <section class="second-section">
+        <div class="second-item">
+            <h1> Manuele Montecchiani </h1>
+            <h5> Contatti dell'investitore : </h5>
+            <p>+39 05 6824 5632</p>
+            <p>manuele.montecchiani@aubank.it</p>
+            <p>investor.relations@aubank.it</p>
+        </div>
+
+        <div class="second-item">
+            <h1> Nazzareno Pompigna </h1>
+            <h5> Contatti dell'investitore : </h5>
+            <p>+39 05 6560 0056</p>
+            <p>nazzareno.pompigna@aubank.it</p>
+            <p>investor.relations@aubank.it</p>
+        </div>
+
+        <div class="second-item">
+            <h1> Stefano Degliuomini </h1>
+            <h5> Contatti dell'investitore : </h5>
+            <p>+39 05 5278 0580</p>
+            <p>stefano.degliuomini@aubank.it</p>
+            <p>investor.relations@aubank.it</p>
+        </div>
+
+        <div class="second-item">
+            <h1> Gabriel Pignatiello </h1>
+            <h5> Contatti dell'investitore : </h5>
+            <p>+39 05 5347 0762</p>
+            <p>gabriel.pignatiello@aubank.it</p>
+            <p>investor.relations@aubank.it</p>
+        </div>
+
+        <div class="second-item">
+            <h1> Raffaele Portente </h1>
+            <h5> Contatti dell'investitore : </h5>
+            <p>+39 05 5568 9093</p>
+            <p>raffaele.portente@aubank.it</p>
+            <p>investor.relations@aubank.it</p>
+        </div>
+
+        
+    </section>
+</div>
+
+
+<app-footer></app-footer>
+

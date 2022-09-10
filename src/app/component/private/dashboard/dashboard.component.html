@@ -1,0 +1,41 @@
+<h1>Dashboard</h1>
+
+<div class="cash-info">
+  <div class="cash-tot">
+    <h2>Conto Tot.</h2>
+    <p>€2.000</p>
+  </div>
+
+  <div class="guadagni-tot">
+    <h2>Entrate Tot.</h2>
+    <p>€200</p>
+  </div>
+
+  <div class="perdite-tot">
+    <h2>Uscite Tot.</h2>
+    <p>€5.000</p>
+  </div>
+</div>
+
+
+<div class="box">
+  <h2>Statistics</h2>
+
+  <div class="container">
+    <div class="a">
+      <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" options="barChartOptions"
+        [legend]="barChartLegend" chartType="barChartType" ></canvas>
+    </div>
+
+    <div class="b">
+      <canvas baseChart [datasets]="radarChartData" [labels]="radarChartLabels" 
+        chartType="radar" ></canvas>
+    </div>
+
+   <!-- <div class="b">
+      <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" 
+        chartType="pieChartType" ></canvas>
+    </div>  -->
+  </div>
+  
+</div>

@@ -1,0 +1,66 @@
+<nav class="nav-bar">
+    <div class="logo">
+        <img src="favicon.ico" alt="">
+        <p>ubank</p>
+    </div>
+
+    <div class="nav-items">
+        <a routerLink="/home">
+            <i class="bi bi-house-fill"></i>
+             Home 
+        </a>
+
+        <a routerLink="/contact"> 
+            <i class="bi bi-phone-fill"></i>
+            Contattaci
+        </a>
+
+        <a *ngIf="isAuthenticated" routerLink="/private">
+            <i class="bi bi-person-fill"></i>
+            Area Personale
+        </a>
+    </div>
+    <a *ngIf="!isAuthenticated" routerLink="/auth">  Accedi </a>
+    <a *ngIf="isAuthenticated" routerLink="/" (click)="logout()">
+        Esci
+    </a>
+</nav>   
+
+<div class="container">
+    <img src="https://gruppo.bancobpm.it/media/2019/09/header-chi-siamo.jpg" alt="immagine">
+    <div class="content">
+        <h1>Gruppo Aubank</h1>
+    </div>
+</div>
+
+<div class="container2">
+   <section class="section">
+      <div class="chisiamo">
+          <h2>CHI SIAMO</h2>
+          <h3>Partner affidabile per milioni di clienti, Aubank è attiva in Italia con più di 23 sedi.</h3>
+      </div>
+
+      <div class="image-container">
+        <img src="../../../assets/images/web-mockup-bank.png" alt="">
+     </div>
+   </section>
+
+
+    <section class="second-section">
+      <div class="inbreve">
+          <h2 class="section-title">AUBANK IN BREVE</h2>
+              <ul class="lista">
+                <li><i class="bi bi-check"></i>Circa 1.000.000 di clienti</li>
+                <li><i class="bi bi-check"></i>23 punti fisici</li>
+                <li><i class="bi bi-check"></i>Oltre 40.000 dipendenti</li>
+                <li><i class="bi bi-check"></i>700.000 utenti registrati sulla nostra app</li>
+              </ul>
+       </div>
+    </section>
+</div>
+<app-footer></app-footer>
+
+
+
+
+

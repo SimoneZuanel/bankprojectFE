@@ -1,0 +1,39 @@
+{
+  "movimenti": [
+    {
+      "id": 1,
+      "movimenti": "+100",
+      "causale":"regalo da francesco rossi",
+      "idconto":1
+    },
+    {
+      "id": 2,
+      "movimenti": "+1300",
+      "causale":"stipendio presso aubay srl",
+      "idconto":1
+    },
+    {
+      "id": 3,
+      "movimenti": "-180",
+      "causale":"acquisto scarpe jordan 1 mid",
+      "idconto":2
+    },
+    {
+      "id": 4,
+      "movimenti": "-350",
+      "causale":"acquisto telefono oppo a94 5G",
+      "idconto":2
+    }
+  ],
+
+  "conto": [
+    {
+      "id":1,
+      "saldo":3000
+    },
+    {
+      "id":2,
+      "saldo":5000
+    }
+  ]
+}

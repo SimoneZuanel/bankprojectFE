@@ -1,0 +1,134 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-bar a {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(141, 141, 141,0.7);
+}
+
+.nav-bar a:hover {
+  color: rgb(87, 87, 87);
+}
+
+.logo{
+  display: flex;
+}
+
+p{
+    margin-top: 0.7pc;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.nav-items > a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(187, 187, 187);
+    margin-left: 50px;
+}
+.nav-items > a:hover {
+    color: rgb(93, 93, 93);
+    cursor: pointer;
+}
+
+.nav-bar > button , .text-container button  {
+  padding: 8px 28px;
+  border-radius: 19px;
+  border: none;
+  outline-width: 0;
+  background-image: linear-gradient(
+    to right,
+   rgb(234, 233, 233), 
+   rgb(206, 206, 206)
+   );
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1pc;
+}
+
+
+.image-container img {
+  width: 500px;
+  margin-top: 2pc;
+  border-radius: 15px;
+  padding-top: 1.5pc;
+  background-color: rgb(240, 240, 240,0.3);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.text-container h1{
+  font-size: 50px;
+  font-weight: 200;
+  margin-bottom: 0.5pc;
+  line-height: 1.1;
+}
+
+.text-container p , .why-us p {
+  color: rgb(107, 107, 107);
+  padding-bottom: 0.7pc;
+  font-weight: 700;
+}
+ 
+.container {
+  background-color: rgba(234, 234, 234, 0.5);
+  width: 100%;
+  margin-top: 3pc;
+}
+
+.why-us{
+  padding-top: 9vh;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10vh;
+}
+
+.why-us h1 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 0.5pc;
+}
+
+.why-us p{
+  margin-top: 2pc;
+}
+
+.second-section {
+  width: 86%;
+  padding-bottom: 5pc;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.second-item h1{
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 0.5pc;
+}
+
+.second-item img {
+  width: 50px;
+}

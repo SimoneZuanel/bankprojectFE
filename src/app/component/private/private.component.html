@@ -1,0 +1,58 @@
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : '' ">
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollapse()">A</button>
+        <div class="logo-text" *ngIf="collapsed"> Aubank </div>
+            <button class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
+                <i class="bi bi-x"></i>
+            </button>
+    </div>
+
+    <div class="scrollwrap scrollwrap_delayed">
+        <ul class="sidenav-nav">
+            <li class="sidenav-nav-item" *ngFor="let data of navData">
+                <a class="sidenav-nav-link" (click)="handleClick(data)"
+                  *ngIf="data.items && data.items.length > 0" 
+                  [ngClass]="getActiveClass(data)"
+                >
+                   <i class="sidenav-link-icon" [class]="data.icon" (click)="toggleCollapse()" ></i>
+                   <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>
+                   <i *ngIf="data.items && collapsed" class="menu-collapse-icon"
+                      [ngClass]="!data.expanded ? 'bi bi-chevron-right' : 'bi bi-chevron-down' "
+                   ></i>
+                </a>
+    
+                <a class="sidenav-nav-link"
+                   *ngIf="!data.items || (data.items && data.items.length === 0)"
+                   [routerLink]="[data.routerLink]"
+                   routerLinkActive="active"
+                   [routerLinkActiveOptions]="{exact: true}"
+                >
+                   <i class="sidenav-link-icon" [class]="data.icon"></i>
+                   <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>
+                </a>
+    
+                <div *ngIf="collapsed && data.items && data.items.length > 0">
+                    <app-submenu
+                      [data]="data"
+                      [collapsed]="collapsed"
+                      [multiple]="multiple"
+                      [expanded]="data.expanded"
+                    ></app-submenu>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="logout">
+        <button class="logout-nav-link" type="button" (click)="logout()">
+           <i class="bi bi-power"></i>
+           <span class="logout-link-text" *ngIf="collapsed">Logout</span>
+        </button>
+    </div>
+</div>
+
+
+
+<app-body>
+    [collapsed]="isSideNavCollapsed"
+    [screenWidh]="screenWidh"
+</app-body>

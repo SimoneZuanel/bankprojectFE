@@ -1,0 +1,103 @@
+<nav class="nav-bar">
+    <div class="logo">
+        <img src="favicon.ico" alt="">
+        <p>ubank</p>
+    </div>
+
+    <div class="nav-items">
+        <a routerLink="/home">
+            <i class="bi bi-house-fill"></i>
+            Home
+        </a>
+        <a routerLink="/chi-siamo">
+            <i class="bi bi-people-fill"></i>
+            Chi Siamo
+        </a>
+        <a routerLink="/contact">
+            <i class="bi bi-phone-fill"></i>
+            Contattaci
+        </a>
+
+        <a *ngIf="isAuthenticated" routerLink="/private">
+            <i class="bi bi-person-fill"></i>
+            Area Personale
+        </a>
+    </div>
+
+    <a *ngIf="!isAuthenticated" routerLink="/login"> Accedi </a>
+      
+    <a *ngIf="isAuthenticated" routerLink="/" (click)="logout()">
+        Esci
+    </a>
+</nav>
+
+<header class="section">
+    <div class="text-container">
+        <h1> Benvenuti in <br> Aubank </h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Aperiam eius nostrum totam consectetur <br>
+            temporibus dignissimos sed impedit <br> labore quisquam, architecto,
+            ullam reiciendis possimus saepe, aut praesentium accusantium obcaecati.
+            Aliquam, odio.
+        </p>
+        <button routerLink="/auth"> Iscriviti alla nostra banca </button>
+    </div>
+
+    <div class="image-container">
+        <img src="../../../assets/images/mobile-app.png" alt="">
+    </div>
+</header>
+
+<div class="container">
+    <section class="why-us">
+        <h1> Perché scegliere Aubank</h1>
+        <p>
+            Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.
+            Aperiam eius <br> nostrum totam consectetur
+            temporibus dignissimos sed impedit <br> labore quisquam, architecto,
+            ullam reiciendis possimus saepe, aut praesentium accusantium obcaecati.
+            Aliquam, odio.
+        </p>
+    </section>
+
+    <section class="second-section">
+        <div class="second-item">
+            <img src="../../../assets/images/debit-card.png" alt="">
+            <h1>Pagamenti Online</h1>
+            <p>
+                Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.
+                Aperiam eius <br> nostrum totam consectetur <br>
+                temporibus dignissimos sed impedit <br> labore quisquam, architecto,
+                ullam reiciendis possimus saepe, aut praesentium accusantium obcaecati.
+                Aliquam, odio.
+            </p>
+        </div>
+
+        <div class="second-item">
+            <img src="../../../assets/images/euro.png" alt="">
+            <h1>Bilancio del Conto</h1>
+            <p>
+                Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.
+                Aperiam eius <br> nostrum totam consectetur <br>
+                temporibus dignissimos sed impedit <br> labore quisquam, architecto,
+                ullam reiciendis possimus saepe, aut praesentium accusantium obcaecati.
+                Aliquam, odio.
+            </p>
+        </div>
+
+        <div class="second-item">
+            <img src="../../../assets/images/add-group.png" alt="">
+            <h1>Iscrizione Veloce</h1>
+            <p>
+                Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit.
+                Aperiam eius <br> nostrum totam consectetur <br>
+                temporibus dignissimos sed impedit <br> labore quisquam, architecto,
+                ullam reiciendis possimus saepe, aut praesentium accusantium obcaecati.
+                Aliquam, odio.
+            </p>
+        </div>
+    </section>
+</div>
+
+<app-footer></app-footer>

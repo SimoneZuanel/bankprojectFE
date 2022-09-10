@@ -1,0 +1,55 @@
+.container {
+    margin-top: 2pc;
+    text-align: center;
+}
+
+.container > .text > h1 {
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.container > .text > p {
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+.container-info {
+    width: 60%;
+    text-align: center;
+    margin-top: 3pc;
+    margin-left: 17.5pc;
+    border: 1px solid rgb(6, 6, 6, 0.3);
+    border-radius: 10px;
+}
+
+.container-title {
+    margin: 3pc 0;
+}
+
+.container-title > h2 ,
+.container-title> p {
+    color: rgba(13, 13, 13, 0.7);
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container-title > p {
+    font-size: 1.2rem;
+}
+
+
+.container-list {
+    margin: 2pc 0;
+    padding: 0 4rem;
+}
+
+.container-item {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+
